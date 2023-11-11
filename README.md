@@ -110,23 +110,30 @@ Adjust the input data to ensure that no variables or outliers are causing confus
 
 --Step 4: Wrote a Report on the Neural Network Model--
 
-For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
+For this part of the assignment, I wrote a report on the performance of the deep learning model you created for Alphabet Soup.
 
-The report should contain the following:
+The report contained the following:
 
-Overview of the analysis: Explain the purpose of this analysis.
+- Overview of the analysis: Explaining the purpose of this analysis.
 
-Results: Using bulleted lists and images to support your answers, address the following questions:
+Results: Used bulleted lists and images to support my answers and addressed the following questions:
 
 Data Preprocessing
 
-What variable(s) are the target(s) for your model?
-What variable(s) are the features for your model?
-What variable(s) should be removed from the input data because they are neither targets nor features?
+- What variable(s) were the target(s) for your model?
+
+- What variable(s) were the features for your model?
+
+- What variable(s) should have been removed from the input data because they are neither targets nor features?
+
 Compiling, Training, and Evaluating the Model
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+- How many neurons, layers, and activation functions were selected for my neural network model, and why?
+
+- Was I able to achieve the target model performance?
+
+- What steps did I take in my attempts to increase model performance?
+
+- Summary: Summarized the overall results of the deep learning model. Included a recommendation for how a different model could solve this classification problem,
+and then explained my recommendation.
   
