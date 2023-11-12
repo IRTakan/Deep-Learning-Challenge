@@ -136,4 +136,5 @@ Compiling, Training, and Evaluating the Model
 
 - Summary: Summarized the overall results of the deep learning model. Included a recommendation for how a different model could solve this classification problem,
 and then explained my recommendation.
-  
+
+*Technologies used: Microsoft Visual Studio Code. Languages: Python
