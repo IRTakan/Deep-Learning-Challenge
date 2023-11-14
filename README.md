@@ -196,7 +196,7 @@ Dropping the STATUS and SPECIAL_CONSIDERATIONS columns resulted in a very small 
 Creating bins for the 'NAME' column enables gathering insights into the distribution of name occurrences in the dataset.
 The addition of this new column had a significantly positive impact, playing an important role in reaching the 75% accuracy.
 
-Overall, by optimizing the model I was able to increase the accuracy from 73 to 75%. This means that I was able to correctly classify each of the points in the test data 75% of the time. This means that applicants had a 75% chance of being successful if they had the following:
+Overall, by optimizing the model I was able to increase the accuracy from 73 to 75%. Meaning I was able to correctly classify each of the points in the test data 75% of the time. This means that applicants had a 75% chance of being successful if they had the following:
 
 - The NAME of the applicant appears more than 5 times (they have applied more than 5 times).
 - The type of APPLICATION: T3, T4, T5, T6 and T19.
