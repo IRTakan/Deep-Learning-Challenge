@@ -137,4 +137,24 @@ Compiling, Training, and Evaluating the Model
 - Summary: Summarized the overall results of the deep learning model. Included a recommendation for how a different model could solve this classification problem,
 and then explained my recommendation.
 
+# Report
+
+After running different tests and various combinations, the following settings were selected based on results, demonstrating the most optimized model in terms of higher accuracy:
+
+- Hidden layer 1: 500 neurons using ReLU as the activation function.
+
+- Hidden layer 2: 300 neurons using Sigmoid as the activation function.
+
+- Hidden layer 3: 150 neurons using Sigmoid as the activation function.
+
+Sigmond used as the activation function with fifteen epochs.
+
+Whilst there many other combinations that could be used to produce improved results, these settings represented the best peforming
+configuration among the other tested examples. Multiple configurations were used to try and maximize the accuracy of the model with this example 
+being one of the best.
+
+The highest accuracy achieved with the initial settings was 0.7272303104400635 (73%). After incorporating changes to the input data, the predictive accuracy reached it's highest target of  0.7537026405334473 (75%).
+
+--Increasing Model Performance--
+
 *Technologies used: Microsoft Visual Studio Code. Languages: Python
