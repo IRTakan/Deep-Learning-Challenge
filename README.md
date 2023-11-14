@@ -147,7 +147,7 @@ After running different tests and various combinations, the following settings w
 
 - Hidden layer 3: 150 neurons using Sigmoid as the activation function.
 
-Sigmond used as the activation function with fifteen epochs.
+Sigmond used as the activation function with fifty epochs.
 
 Whilst there many other combinations that could be used to produce improved results, these settings represented the best peforming
 configuration among the other tested examples. Multiple configurations were used to try and maximize the accuracy of the model with this example 
@@ -156,5 +156,8 @@ being one of the best.
 The highest accuracy achieved with the initial settings was 0.7272303104400635 (73%). After incorporating changes to the input data, the predictive accuracy reached it's highest target of  0.7537026405334473 (75%).
 
 --Increasing Model Performance--
+
+Initial Model: 2 layer, 500 and 200 neurons and fifty epochs.
+
 
 *Technologies used: Microsoft Visual Studio Code. Languages: Python
