@@ -137,4 +137,67 @@ Compiling, Training, and Evaluating the Model
 - Summary: Summarized the overall results of the deep learning model. Included a recommendation for how a different model could solve this classification problem,
 and then explained my recommendation.
 
+# Report
+
+After running different tests and various combinations, the following settings were selected based on results, demonstrating the most optimized model in terms of higher accuracy:
+
+- Hidden layer 1: 500 neurons using ReLU as the activation function.
+
+- Hidden layer 2: 300 neurons using Sigmoid as the activation function.
+
+- Hidden layer 3: 150 neurons using Sigmoid as the activation function.
+
+Sigmond used as the activation function with fifty epochs.
+
+Whilst there many other combinations that could be used to produce improved results, these settings represented the best peforming
+configuration among the other tested examples. Multiple configurations were used to try and maximize the accuracy of the model with this example 
+being one of the best.
+
+The highest accuracy achieved with the initial settings was 0.7272303104400635 (73%). After incorporating changes to the input data, the predictive accuracy reached it's highest target of  0.7537026405334473 (75%).
+
+--Increasing Model Performance--
+
+Initial Model: 2 layers, 85 and 40 neurons and fifty epochs.
+
+IMAGE
+
+First approach: Changing the number of epochs:
+
+Model 2: 2 layers. 80, 30 neurons and thirty epochs.
+
+After experimenting with different epoch values, With high number like like 150 and gradually reducing it, the accuracy showed improvement with smaller values. 
+This can be explained by the fact that reducing the number of epochs can sometimes leads to better results, particularly when the model starts overfitting or becomes too specialized to the training data. So thirty epochs were chosen which produced an accuarcy of 0.750437319278717, so an improvement from the 73% of the initial model.
+
+Model 3: Adding a third layer. 500, 300, 150 neurons and fifteen epochs.
+
+After adding a third layer and combining different activation functions, implementing three hidden layers with the following settings resulted in an accuracy of 
+Accuracy:  0.7514868974685669 (75%), so the similar to model 2.
+
+Second approach: Change the data input:
+
+--Creating more bins for rare occurrences in columns and increasing or decreasing the number of values for each bin:--
+
+Initially, creating bins for the 'ASK_AMT' (funding amount requested) column was explored, but it did result in a decrease in accuracy. This outcome highlights the significance of this column for the neural network model. Ultimately, due to the observed decrease in accuracy, the idea of using bins was abandoned, and the binned data was not incorporated into the model,
+
+The cutoff for the column 'APPLICATION_TYPE' was set at 600, and the column 'CLASSIFICATION' was set at 1000. After running a number of tests, it was determined that choosing 200 to bin the column APPLICATION_TYPE and 1000 to bin the column CLASSIFICATION seemed to be the values that would work.
+
+--Dropping more columns:--
+
+Dropping the STATUS and SPECIAL_CONSIDERATIONS columns resulted in a very small improvement in accuracy. This highlights the neutral impact of these two columns on the model.
+
+--Creating bins for the column 'NAME' before dropping it:--
+
+Creating bins for the 'NAME' column enables gathering insights into the distribution of name occurrences in the dataset.
+The addition of this new column had a significantly positive impact, playing an important role in reaching the 75% accuracy.
+
+Overall, by optimizing the model I was able to increase the accuracy from 73 to 75%. This means that was able to correctly classify each of the points in the test data 75% of the time. This means that applicants had a 75% chance of being successful if they had the following:
+
+- The NAME of the applicant appears more than 5 times (they have applied more than 5 times).
+- The type of APPLICATION is one of the following: T3, T4, T5, T6 and T19.
+- The application has the following values for CLASSIFICATION: C1000, C1200, C2000,C2100 and C3.
+
+I decided to explore alternatives like the Random Forest classifier. Despite a slightly lower accuracy of 0.734 it does offers some advantages.
+In contrast, Linear Regression, which was also considered, did not provide meaningful insights or contribute significantly to understanding the dataset better.
+The Random Forest model is used in scenarios where interpretability is crucial. Its strong, lower susceptibility to overfitting making it a more appealing choice for specific applications that are looking to offer a more comprehensive set of metrics for a nuanced evaluation of model performance. The choice between the neural network and the Random Forest depends on what the desired goal is. If the primary goal here is maximize accuracy, the neural network is better. However, if interpretability is a priority and a slight reduction in accuracy is something that yu don't mind then the Random Forest model provides valuable insights.
+
 *Technologies used: Microsoft Visual Studio Code. Languages: Python
