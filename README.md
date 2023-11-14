@@ -153,13 +153,15 @@ Whilst there many other combinations that could be used to produce improved resu
 configuration among the other tested examples. Multiple configurations were used to try and maximize the accuracy of the model with this example 
 being one of the best.
 
-The highest accuracy achieved with the initial settings was 0.7272303104400635 (73%). After incorporating changes to the input data, the predictive accuracy reached it's highest target of  0.7537026405334473 (75%).
+The highest accuracy achieved with the initial settings was 0.7272303104400635 (73%). After incorporating changes to the input data, the predictive accuracy reached it's highest target of 0.7514868974685669 (75%).
 
 --Increasing Model Performance--
 
 Initial Model: 2 layers, 85 and 40 neurons and fifty epochs.
 
-IMAGE
+<img src= "https://github.com/IRTakan/Deep-Learning-Challenge/blob/main/images/model1.png" height = 300 width= 400 >
+
+<img src="https://github.com/IRTakan/Deep-Learning-Challenge/blob/main/images/model1results.png" height = 100 width= 400 >
 
 First approach: Changing the number of epochs:
 
@@ -168,16 +170,20 @@ Model 2: 2 layers. 80, 30 neurons and thirty epochs.
 After experimenting with different epoch values, With high number like like 150 and gradually reducing it, the accuracy showed improvement with smaller values. 
 This can be explained by the fact that reducing the number of epochs can sometimes leads to better results, particularly when the model starts overfitting or becomes too specialized to the training data. So thirty epochs were chosen which produced an accuarcy of 0.750437319278717, so an improvement from the 73% of the initial model.
 
+<img src="https://github.com/IRTakan/Deep-Learning-Challenge/blob/main/images/model2.png" height = 350 width= 400 >
+
 Model 3: Adding a third layer. 500, 300, 150 neurons and fifteen epochs.
 
 After adding a third layer and combining different activation functions, implementing three hidden layers with the following settings resulted in an accuracy of 
 Accuracy:  0.7514868974685669 (75%), so the similar to model 2.
 
+<img src="https://github.com/IRTakan/Deep-Learning-Challenge/blob/main/images/model3.png" height = 350 width= 500 >
+
 Second approach: Change the data input:
 
 --Creating more bins for rare occurrences in columns and increasing or decreasing the number of values for each bin:--
 
-Initially, creating bins for the 'ASK_AMT' (funding amount requested) column was explored, but it did result in a decrease in accuracy. This outcome highlights the significance of this column for the neural network model. Ultimately, due to the observed decrease in accuracy, the idea of using bins was abandoned, and the binned data was not incorporated into the model,
+Initially, creating bins for the 'ASK_AMT' column was explored, but it did result in a decrease in accuracy. This outcome highlights the significance of this column for the neural network model. Ultimately, due to the observed decrease in accuracy, the idea of using bins was abandoned, and the binned data was not incorporated into the model.
 
 The cutoff for the column 'APPLICATION_TYPE' was set at 600, and the column 'CLASSIFICATION' was set at 1000. After running a number of tests, it was determined that choosing 200 to bin the column APPLICATION_TYPE and 1000 to bin the column CLASSIFICATION seemed to be the values that would work.
 
@@ -199,5 +205,7 @@ Overall, by optimizing the model I was able to increase the accuracy from 73 to 
 I decided to explore alternatives like the Random Forest classifier. Despite a slightly lower accuracy of 0.734 it does offers some advantages.
 In contrast, Linear Regression, which was also considered, did not provide meaningful insights or contribute significantly to understanding the dataset better.
 The Random Forest model is used in scenarios where interpretability is crucial. Its strong, lower susceptibility to overfitting making it a more appealing choice for specific applications that are looking to offer a more comprehensive set of metrics for a nuanced evaluation of model performance. The choice between the neural network and the Random Forest depends on what the desired goal is. If the primary goal here is maximize accuracy, the neural network is better. However, if interpretability is a priority and a slight reduction in accuracy is something that yu don't mind then the Random Forest model provides valuable insights.
+
+<img src="https://github.com/IRTakan/Deep-Learning-Challenge/blob/main/images/altmodel.png" height = 300 width= 500 >
 
 *Technologies used: Microsoft Visual Studio Code. Languages: Python
