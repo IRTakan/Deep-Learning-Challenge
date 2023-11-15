@@ -208,4 +208,4 @@ The Random Forest model is used in scenarios where interpretability is crucial. 
 
 <img src="https://github.com/IRTakan/Deep-Learning-Challenge/blob/main/images/altmodel.png" height = 300 width= 500 >
 
-*Technologies used: Microsoft Visual Studio Code. Languages: Python
+*Technologies used: Google Colab. Languages: Python.
